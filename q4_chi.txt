@@ -1,0 +1,4 @@
+Exponential Law
+Half Lifetime of radioactive material is -70.60568356214335 with error 6.949915412843617
+The chi and reduced chi values are (0.08301121723233656, 0.01037640215404207)
+The critical chi is found to be 15.057 which implies we do not have enough evidence to reject

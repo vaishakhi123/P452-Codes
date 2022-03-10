@@ -1,0 +1,5 @@
+The dominant eigen value is  3.73205 and its coreesponding eigen vector is [ 0.28885554 -0.50018039  0.57735023 -0.49981955  0.2884947 ]
+The second dominant eigen value is  3.00000 and its coreesponding eigen vector is [-4.99878890e-01  4.99763492e-01  2.57113140e-04 -5.00208443e-01
+  5.00148973e-01]
+True - Eigen values match
+True - First Eigen vector match
