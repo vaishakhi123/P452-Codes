@@ -1,5 +1,4 @@
 import numpy as np
-from scipy.sparse.linalg import cg
 import time
 import sys
 from itertools import islice
@@ -13,8 +12,8 @@ from pprint import pprint
 sys.path.insert(0, '../')
 from vaishakhi.elimination_solvers import *
 from vaishakhi.iterative_solvers import *
-np.set_printoptions(linewidth=140)
-
+np.set_printoptions(threshold=sys.maxsize)
+np.set_printoptions(linewidth = 160)
 
 class MatrixFly:
     r"""
@@ -73,25 +72,29 @@ def delta(i,j):
 
 def func(i,j):
     r"""
-    Lagrangian of the system 
-    """ 
-    return 0.5*(delta(i+1,j)+delta(i-1,j)-(2*delta(i,j))) + (0.2**2)*delta(i,j)
+    Lagrangian of the system - breaking the vectors into components
+    """
+    dim = 20
+    mu = 1 
+    x = i//dim+1
+    y = i%dim
+    a = j//dim+1
+    b = j%dim
+    L_xyab = 0.5*((delta(x+1,a)*delta(y,b))+(delta(x-1,a)*delta(y,b))-(4*delta(x,a)*delta(y,b))+(delta(x,a)*delta(y+1,b)) +(delta(x,a)*delta(y-1,b))) + (0.2**2)*delta(x,a)*delta(y,b)
+    return L_xyab
 
 tol = 1e-06
-print("\n-----Inverse of 20x20 matrix without storing it using Conjugate Gradient----\n")
+print("\n-----Inverse of 400x400 matrix without storing it using Conjugate Gradient----\n")
 tic2 = time.process_time()
-A = MatrixFly(20,20,func)
+dim = 20
+size = dim*dim
+A = MatrixFly(size,size,func)
 A_inv,l,r = inverse(A,conjugate_grad,tol)
-print(A)
-print("The inverse of the matrix is \n {0}".format(A_inv))
-print("Conjugate gradient iverse inverse time",time.process_time()-tic2)
 
+print("The inverse of the matrix (first three columns) is \n {0}".format(A_inv))
+print("Conjugate gradient iverse inverse time",time.process_time()-tic2)
 
 plt.plot(l,r)
 plt.xlabel("Iteration")
 plt.ylabel("Residue")
 plt.show()
-plt.show()
-
-
-
