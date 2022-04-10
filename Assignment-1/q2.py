@@ -27,9 +27,7 @@ tol = 1e-04
 
 figure, axis = plt.subplots(1, 3)
 
-#Checking whether the matrix is symmetric and positive definite or not
-np.all(np.linalg.eigvals(A) > 0) 
-print(np.linalg.cholesky(A))
+#The matrix given in the question was not symmteric. So while solving this question I changed the element A_12 = A_45 = -1. This made the matrix symmetric
 
 ##Solving the almost sparse system 
 print("------------Ax=b----------\n")
