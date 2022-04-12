@@ -1,0 +1,4 @@
+The fitting parameters for the polynomial fit are [  0.57465867   4.72586144 -11.12821778   7.66867762]
+The fitting parameters for modified chebyshev are [1.16096948 0.39351447 0.04684983 0.23964618]
+The condition number for matrices for polynomial regression and modified chebyshev are 12104.9487 and 3.8561 respectively
+The lower conditional number of modified basis method tells us about the numerical stability and accuracy
