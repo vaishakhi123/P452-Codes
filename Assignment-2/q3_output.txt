@@ -1,0 +1,4 @@
+The estimated volume of Steinmetz solid by Monte Carlo integration of integral 4(1-x²) from (-1,1) is 5.338571329532613 for m = 1021 and a = 65.
+The estimated volume of Steinmetz solid by Monte Carlo integration of integral 4(1-x²) from (-1,1) is 5.333643479826128 for m = 16381 and a = 572.
+
+The estimated volume of Steinmetz solid by Monte Carlo i.e throwing points is 5.223552
