@@ -1,2 +1,0 @@
-The estimated volume of Steinmetz solid by Monte Carlo integration is 5.328390963133658 for m = 1021 and a = 65.
-The estimated volume of Steinmetz solid by Monte Carlo integration is 5.340579606808914 for m = 16381 and a = 572.
