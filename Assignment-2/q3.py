@@ -20,21 +20,24 @@ for j in range (0,2):
     for i in ar:
         integral += f(i)
     ans = (final-initial)/float(n)*integral
-    print ('The estimated volume of Steinmetz solid by Monte Carlo integration of integral 4(1-x\u00b2) from (-1,1) is {} for m = {} and a = {}.'.format(ans,m[j],a[j]))
+    print ('The estimated volume of Steinmetz solid by Monte Carlo integration of integral 4(1-x\u00b2) from (-1,1) is {} for m = {} and a = {}.\n'.format(ans,m[j],a[j]))
 
-st_points = 0
-i =0
 
-while i<n:
+
+
+for j in range (0,2):
+    st_points = 0
+    i =0
+    while i<n:
     
-    x = rand_uniform(1021,65,0,-1,1)
-    y = rand_uniform(1021,65,0,-1,1)
-    z = rand_uniform(1021,65,0,-1,1)    
-    #print(x,y,z)
-    if(x**2 + y**2 <= 1) and (z**2 + y**2 <= 1):
-        st_points+=1
+        x = rand_uniform(m[j],a[j],0,-1,1)
+        y = rand_uniform(m[j],a[j],0,-1,1)
+        z = rand_uniform(m[j],a[j],0,-1,1)    
+            #print(x,y,z)
+        if(x**2 + y**2 <= 1) and (z**2 + y**2 <= 1):
+                st_points+=1
 
-    i+=1
+        i+=1
 
-vol = 8*st_points/n
-print('\nThe estimated volume of Steinmetz solid by Monte Carlo i.e throwing points is', vol)  
+        vol = 8*st_points/n
+    print('The estimated volume of Steinmetz solid by Monte Carlo i.e throwing points for {} is for m = {} and a = {}.\n'.format(vol,m[j],a[j])) 
