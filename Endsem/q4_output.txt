@@ -1,0 +1,3 @@
+The potential for 2 units rod at distance of 1 unit is 1.443515247597232 using gaussian quadrature with n = 4
+The potential for 2 units rod at distance of 1 unit is 1.4436463874023353 using gaussian quadrature with n = 5
+The potential for 2 units rod at distance of 1 unit is 1.443636333848491 using gaussian quadrature with n = 6

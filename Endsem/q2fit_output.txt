@@ -1,0 +1,5 @@
+The fitting is done for n =  6
+The fitting parameters for the polynomial fit are [ 0.12177995 -0.027937   -0.5244683   0.09157037  0.74308968 -0.05297491
+ -0.17880208]
+The fitting parameters for modified Legendre are [ 1.27657207e+01  4.30168584e-03 -2.95463087e-01  1.30837436e-02
+  1.14118550e-01 -6.72697222e-03 -1.23845597e-02]
