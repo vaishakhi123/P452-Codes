@@ -26,10 +26,10 @@ def fun(x):
     return 1/np.sqrt((1+x**2))
 
 for i in range(4,7,1):  
-    print("The potential for 2 units rod at distance of 1 unit is",gauss(fun,0,2,i), "using gaussian quadrature with n =",i)
+    print("The potential for 2 units rod at distance of 1 unit is",gauss(fun,-1,1,i), "using gaussian quadrature with n =",i)
     
 """Output
-The potential for 2 units rod at distance of 1 unit is 1.443515247597232 using gaussian quadrature with n = 4
-The potential for 2 units rod at distance of 1 unit is 1.4436463874023353 using gaussian quadrature with n = 5
-The potential for 2 units rod at distance of 1 unit is 1.443636333848491 using gaussian quadrature with n = 6
+The potential for 2 units rod at distance of 1 unit is 1.7620541802977083 using gaussian quadrature with n = 4
+The potential for 2 units rod at distance of 1 unit is 1.7628553029376144 using gaussian quadrature with n = 5
+The potential for 2 units rod at distance of 1 unit is 1.7627300313582537 using gaussian quadrature with n = 6
 """
