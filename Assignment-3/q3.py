@@ -1,4 +1,3 @@
-# Simple Numerical Laplace Equation Solution using Finite Difference Method
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -6,7 +5,7 @@ import matplotlib.pyplot as plt
 maxIter = 500
 
 # Set Dimension and delta
-lenX = lenY = 20 #we set it rectangular
+lenX = lenY = 20
 delta = 1
 
 # Boundary condition
@@ -53,5 +52,5 @@ plt.ylabel("Y steps")
 plt.colorbar()
 
 # Show the result in the plot window
-plt.show()
 plt.savefig("q3_laplace.png")
+plt.show()
