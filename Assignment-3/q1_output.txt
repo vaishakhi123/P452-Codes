@@ -1,4 +1,0 @@
--------------------------Monte carlo integration----------------------------
-
-The estimated value of the integral by monte carlo integration without important sampling is 0.74653.
-The estimated value of the integral by monte carlo integration via important sampling using e^(-ax) with a being 0.001 is 0.74671.
