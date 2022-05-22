@@ -1,0 +1,5 @@
+-------------------------Monte carlo integration----------------------------
+
+The estimated value of the integral by monte carlo integration without important sampling is 0.74678.
+The estimated value of the integral by monte carlo integration via important sampling using alpha*e^(-x) with alpha = 1.582 is 0.74684.
+alpha has been obtained by normalising the probability function from 0 to 1 which turned to be approximately 1.582

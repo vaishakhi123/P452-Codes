@@ -1,0 +1,5 @@
+--------------------Solving infinte potential well of unit width using shooting method via RK4-------------------
+
+E = 0.375 eV for ground state
+E = 1.495 eV for first excited state
+
